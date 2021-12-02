@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="1018.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.app.fxcontrollers.MainAppController">
+   <children>
+      <ImageView fx:id="MainFingerprintImgView" fitHeight="319.0" fitWidth="315.0" layoutX="92.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="MainFingerprintUploadBtn" layoutX="152.0" layoutY="402.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" style="-fx-background-radius: 25;" text="Upload main fingerprint">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="TestingFingerprintUploadBtn" layoutX="672.0" layoutY="402.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" style="-fx-background-radius: 25;" text="Upload testing fingerprint">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextField fx:id="AccuracyTextField" layoutX="506.0" layoutY="476.0" prefHeight="25.0" prefWidth="96.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="AccuracyLabel" alignment="CENTER_RIGHT" layoutX="369.0" layoutY="470.0" prefHeight="37.0" prefWidth="127.0" text="Required accuracy:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="MatchingBtn" layoutX="409.0" layoutY="530.0" mnemonicParsing="false" prefHeight="46.0" prefWidth="195.0" style="-fx-background-radius: 25;" text="Match">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <BorderPane fx:id="TestingImgBorderPane" layoutX="623.0" layoutY="52.0" prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <ImageView fx:id="TestingFingerprintImgView" fitHeight="319.0" fitWidth="315.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
